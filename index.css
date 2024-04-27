@@ -49,6 +49,7 @@ footer {
   align-items: center;
   text-align: center;
   gap: 20px;
+  transition: width 1.5s ease-in-out;
 }
 
 .split#left {
