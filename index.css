@@ -14,10 +14,10 @@ body {
   color: hsl(24, 10%, 10%);
 }
 header,
-body,
+main,
 footer {
-  min-width: 100%;
-  padding: 20px;
+  min-width: 100vw;
+  padding: 10px;
 }
 header,
 footer {
@@ -31,8 +31,71 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  position: relative;
 }
 footer {
   font-size: 1.4rem;
   font-weight: bold;
+}
+
+.split {
+  width: 50%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.split#left {
+  background-color: white;
+  background: url('huawei.jpeg');
+  background-size: cover;
+  color: black;
+  position: absolute;
+  left: 0;
+}
+.split#right {
+  background-color: black;
+  background: url('samsung.webp');
+  background-size: cover;
+  color: white;
+  position: absolute;
+  right: 0;
+}
+
+h2 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  padding: 10px;
+  min-width: 100%;
+}
+button {
+  background-color: black;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 550;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+button:hover {
+  opacity: 0.6;
+  transform: scale(1.1);
+}
+#left h2 {
+  background-color: white;
+  opacity: 0.6;
+}
+#right h2 {
+  background-color: black;
+  opacity: 0.6;
 }
