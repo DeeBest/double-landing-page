@@ -99,3 +99,15 @@ button:hover {
   background-color: black;
   opacity: 0.6;
 }
+.active-left #left {
+  width: 75%;
+}
+.active-left #right {
+  width: 25%;
+}
+.active-right #left {
+  width: 25%;
+}
+.active-right #right {
+  width: 75%;
+}
